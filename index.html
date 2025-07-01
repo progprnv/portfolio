@@ -436,17 +436,14 @@
       <div class="col-md-12">
         <!-- section heading -->
         <h3 class="wrapper-heading">Contact Me</h3>
-        <p><b>Feel free to send me a message 👇</b></p>
+        <p><b>Feel free to connect with me directly through the details below 👇</b></p>
       </div>
       <div class="col-lg-12 col-md-12">
         <div class="contact-info">
-          <form id="contact-form">
-            <input type="text" name="from_name" placeholder="Your Name" required><br><br>
-            <input type="email" name="email" placeholder="Your Email" required><br><br>
-            <textarea name="message" placeholder="Your Message" rows="5" required></textarea><br><br>
-            <button class="default-btn" type="submit">Send Message</button>
-          </form>
-          <p id="form-status" style="margin-top: 10px;"></p>
+          <p><strong>Email:</strong> <a href="mailto:pranavjayan.info@gmail.com">pranavjayan.info@gmail.com</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pranav-jayan-818b52208" target="_blank">linkedin.com/in/pranav-jayan-818b52208</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/progprnv" target="_blank">github.com/progprnv</a></p>
+          <p><strong>Twitter:</strong> <a href="https://x.com/progprnv" target="_blank">x.com/progprnv</a></p>
         </div>
       </div>
     </div>
@@ -462,7 +459,6 @@
         <a href="https://www.linkedin.com/in/pranav-jayan-818b52208" target="_blank">LinkedIn</a>
         <a href="https://github.com/progprnv" target="_blank">GitHub</a>
         <a href="https://x.com/progprnv" target="_blank">Twitter</a>
-        
       </div>
       <p style="color: rgba(251, 251, 251, 0.89); font-size: 20px; box-shadow: rgb(228, 255, 202);" class="footer-copyright">
         <strong>progprnv</strong>
@@ -484,25 +480,5 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
-
-<!-- EmailJS Integration -->
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-  (function () {
-    emailjs.init("tAsHeHUc0ZLtOkkjr"); // Replace with your EmailJS public key
-  })();
-
-  document.getElementById('contact-form').addEventListener('submit', function (event) {
-    event.preventDefault();
-    emailjs.sendForm('service_5fnup4u', 'template_4xi6acj', this)
-      .then(function () {
-        document.getElementById("form-status").innerHTML = "✅ Message sent successfully!";
-        document.getElementById("contact-form").reset();
-      }, function (error) {
-        document.getElementById("form-status").innerHTML = "❌ Failed to send message. Try again.";
-        console.error('FAILED...', error);
-      });
-  });
-</script>
 </body>
 </html>
