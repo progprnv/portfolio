@@ -489,12 +489,12 @@
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
   (function () {
-    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
+    emailjs.init("tAsHeHUc0ZLtOkkjr"); // Replace with your EmailJS public key
   })();
 
   document.getElementById('contact-form').addEventListener('submit', function (event) {
     event.preventDefault();
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+    emailjs.sendForm('service_5fnup4u', 'template_4xi6acj', this)
       .then(function () {
         document.getElementById("form-status").innerHTML = "✅ Message sent successfully!";
         document.getElementById("contact-form").reset();
